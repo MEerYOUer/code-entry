@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>RSVP</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="public/css/styles.min.css" rel="stylesheet" />
+        <link href="public/css/rsvp.min.css" rel="stylesheet" />
+    </head>
+    <body id="page-top" style="height: 100%; display: flex; flex-direction: column; min-height: 700px;"> <!-- overflow: hidden; -->
+        <div id="page-content" style="display: flex; flex-direction: column; justify-content: center; align-items: center; flex: 1 0 auto;">
+            <!-- <div class="pyro">
+                <div class="before"></div>
+                <div class="after"></div>
+            </div> -->
+            <div id="form-content" style="display: flex; flex-direction: column; justify-content: center; align-items: center; flex: 1 0 auto;">
+                <div style="height: 85px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <h1 id="form-label" style="text-align: center;">Enter your code:</h1>
+                </div>
+                <!-- <div id="form-input" style="margin: 30px; display: flex; flex-direction: row; justify-content: center; align-items: center; width: 100%; height: 90px;"> -->
+                <div id="form-input" style="margin: 30px; height: 90px; position: relative;">
+                    <input class="code-input" id="code" type="text" maxlength="5" oninput="validate();" style="width: 250px;" />
+                    <input class="boolean-input" id="yes" type="button" value="Yes" style="display: none;" onclick="attendance('yes')">
+                    <input class="boolean-input" id="no" type="button" value="No" style="display: none;" onclick="attendance('no')"> 
+                </div>
+                <div id="button-holder" style="width: 100%; display: flex; align-items: center; justify-content: center; margin-top: 30px">
+                    <div style="position: absolute;">
+                        <button id="submit" type="button" style="opacity: 20%;" onclick="submitCode();" disabled="true" >
+                            <svg width="180px" height="60px" viewBox="0 0 180 60">
+                                <polyline points="179,3 179,59 3,59 3,3 179,3" class="bg-line" />
+                                <polyline points="179,3 179,59 3,59 3,3 179,3" class="hl-line" />
+                              </svg>
+                              <span>SUBMIT</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50">
+            <div class="container">
+                Copyright © Brian Kanode 2021 | Icons from www.flaticon.com and www.freepik.com
+            </div>
+        </footer>
+        <!-- JS -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="public/js/scripts.js"></script>
+    </body>
+</html>
