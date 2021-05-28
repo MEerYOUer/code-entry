@@ -48,7 +48,7 @@ function submitCode() {
                 $("[id*=form-content]")
                 .append($("<img />").attr({ id: "img-confetti", src: "public/assets/img/confetti.svg", style: "width: 200px; margin: 50px 0 50px 0;" }))
                 .append($("<h1 />").attr({ class: "accept-h1", style: "color: black; text-align: center;" }).html("Code received. Be safe out there!"))
-                .append($("<h1 />").attr({ id: "countdown", class: "accept-h1", style: "color: black; text-align: center;" }));
+                .append($("<h1 />").attr({ id: "countdown", class: "accept-h1", style: "color: black; text-align: center;" }).html("15 seconds until reset."));
 
                 // start reset timer
                 startCountDownTimer();
